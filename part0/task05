@@ -1,0 +1,24 @@
+link for the diagram:
+https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgVGFzayAwLjUKCmJyb3dzZXItPnNlcnZlcjogSFRUUCBHRVQgaHR0cHM6Ly9zdHVkaWVzLmNzLmhlbHNpbmtpLmZpL2V4YW1wbGVhcHAvc3BhCgA5Bi0tPgBKBzogSFRNTC1jb2RlAB9FbWFpbi5jc3MAVhMAEgkAgQVHLmoAUhQAEgcKbm90ZSBvdmVyIACBYggAgjwIIHN0YXJ0cyBleGVjdXRpbmcganMAgXsGdGhhdCByZXF1ZXN0cyBKU09OIGRhdGEgZnJvbSAAgnMGIAplbmQgbm90ZQCCTkZkYXRhLmpzb24AgwcTW3tjb250ZW50OiAnJywgZGF0ZTogJzIwMjItMDQtMjNUMTk6MzA6NTAuOTcwWid9LCAuLi5dAIFeHQCBbgZlcyB0aGUgZXZlbnQgaGFuZGxlcgCBdQhuZGVycwCBXAVzIHRvIGRpc3BsYXkAgWsLCg&s=default
+
+title Task 0.5
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: spa.js
+
+note over browser:
+browser starts executing js-code
+that requests JSON data from server 
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: [{content: '', date: '2022-04-23T19:30:50.970Z'}, ...]
+
+note over browser:
+browser executes the event handler
+that renders notes to display
+end note

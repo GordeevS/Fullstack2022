@@ -1,0 +1,12 @@
+link for diagram:
+https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgVGFzayAwLjYKCmJyb3dzZXItPnNlcnZlcjogSFRUUCBQT1NUIGh0dHBzOi8vc3R1ZGllcy5jcy5oZWxzaW5raS5maS9leGFtcGxlYXBwL25ld19ub3RlX3NwYQoAQwYtLT4AVAcATQYtc3RhdHVzIDIwMSAoY3JlYXRlZCkKCm5vdGUgb3ZlciAAJggAgQoIIHN0YXlzIG9uIHRoZSBzYW1lIHBhZ2UKd2l0aG91dCBhbnkgb3RoZXIAgSwGcmVxdWVzdHMKZW5kIG5vdGUKCg&s=default
+
+title Task 0.6
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: HTTP-status 201 (created)
+
+note over browser:
+browser stays on the same page
+without any other HTTP requests
+end note
